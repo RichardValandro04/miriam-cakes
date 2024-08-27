@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/*Configuração da página HTML*/
+html {
+    font-size: 62.5% !important;
+    font-family: "Inter", sans-serif
+}
+
+/*Configuração de todos os elementos*/
+* {
+    outline: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+}
+
+/*Configuração do corpo do HTML*/
+body {
+    height: 100vh !important;
+    display: flex !important;
+    flex-direction: column !important;
+    background-color: #feebeb !important;
+}
+
+    
+/*Configuração do container principal */
+.container {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    width: 100% !important;
+    height: 100% !important;
+    justify-content: center !important;
+    max-width: 100% !important;
+
+
+}
+
+.container>div>label {
+    color: #adb895 !important;
+    font-size: 2rem !important;
+    font-weight: bold !important;
+}
+
+.container>div>input {
+    background-color: #FACECE !important; 
+    width: 100% !important;
+    border: none !important;
+    border-radius: 0.5rem !important;
+
+}
+
+.container>div {
+    padding: 2rem !important;
+}
+
+/*configuração do texto que fica centralizado na página*/
+.texto_central {
+    
+    flex-direction: column !important;
+    align-items: center !important;
+    margin-bottom: 2rem !important;
+    font-size: 2rem !important;
+    background-color: #adb895 !important;
+    color: #feebeb !important;
+    padding: 1rem !important;
+    border-radius: 2rem !important;
+    
+}
+
+/*configuração da div "email"*/
+.campos {
+    gap: 1rem !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    width: 50% !important;
+    height: 40% !important;
+}
+
+
+.campos>input {
+    height: 4rem !important;
+    padding: 1rem !important;
+}
+
+.campos {
+    justify-content: flex-start !important;
+}
+
+
+/*configuração do botão "enviar"*/
+.botao_enviar {
+
+    background-color: #adb895 !important;
+    color: #feebeb !important;
+    border: none !important;
+    border-radius: 0.6rem !important;
+    height: 4rem !important;
+    width: 10% !important;
+    font-size: 1.8rem !important;
+    font-weight: bold !important;
+}
+
+.botao_enviar:hover {
+    scale: 1.05 !important;
+    filter: grayscale(30%) !important;
+}
+
+
+

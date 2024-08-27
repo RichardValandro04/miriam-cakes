@@ -1,0 +1,643 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/*o font size na tag HTML é para padronizar a fonte em 10px, tornando mais fácil trabalhar com a medida rem*/
+html {
+    font-size: 62.5% !important;
+    font-family: "Inter", sans-serif !important;
+}
+
+/*foi aplicado o tamanho do body em 100% do viewport e um background rosa, além do display flex */
+body {
+    height: 100vh !important;
+    display: flex !important;
+    flex-direction: column !important;
+    background-color: #feebeb !important;
+}
+
+/*RESET - Utilizado para aplicar os estilos em todo o conteúdo da página*/
+* {
+    outline: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+}
+
+
+
+/* configuração do identificador da pagina, com icone e nome */
+.identificador_pagina {
+    margin-top: 2rem !important;
+    margin-left: 2rem !important;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+}
+
+.identificador_pagina>img {
+    width: 6rem !important;
+}
+
+.identificador_pagina>h1 {
+    color: #ADB895 !important;
+    font-size: 3.5rem !important;
+    margin-top: 1rem !important;
+    margin-left: 1rem !important;
+}
+
+/* configurações do article que contém todos os campos de dados*/
+article {
+    height: 100vh !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: column !important;
+    row-gap: 5rem;
+}
+
+/* Div dos campos de dados */
+.dados {
+    width: 60% !important;
+}
+
+/* formatação do label */
+label {
+    color: #ADB895 !important;
+    font-size: 2rem !important;
+    font-weight: bold !important;
+}
+
+
+/* aplicando flex-direction column para deixar label sobre input */
+.campo_nome,
+.campo_email,
+.campo_telefone,
+.campo_cpf,
+.campo_senha {
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+/* Alinhamentos e tamanhos dos campos de dados */
+.campo_senha{
+    margin-left: 49rem !important;
+}
+
+.campo_email,
+.campo_nome {
+    width: 93% !important;
+}
+
+.campo_telefone,
+.campo_senha,
+.campo_cpf {
+    width: 42.5% !important;
+}
+
+.campo_nome>input,
+.campo_email>input,
+.campo_telefone>input,
+.campo_cpf>input,
+.campo_senha>input{
+    background-color: #FACECE !important;
+    border: none !important;
+    border-radius: 0.5rem !important;
+    margin-bottom: 2rem !important;
+    height: 3rem !important;
+    padding: 1rem !important;
+
+}
+
+.linha_email,
+.linha_telefone,
+.linha_senha {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+}
+
+
+
+.confirmar_telefone, .confirmar_email{
+    display: none;
+}
+
+
+.confirmar_email>img{
+    max-width: 3rem !important;
+    padding: 0.4rem !important;
+    background-color: #FACECE !important;
+    border-radius: 20% !important;
+    margin-left: 0.8rem !important;
+}
+
+.confirmar_telefone>img{
+    max-width: 3rem !important;
+    padding: 0.4rem !important;
+    background-color: #FACECE !important;
+    border-radius: 20% !important;
+    margin-left: 0.8rem !important;
+}
+
+dialog{
+    width: 80rem;
+    height: 50rem;
+    translate: 70% 40%;
+}
+
+.dialogTudo{
+    flex-direction: column;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dialogEmail, .dialogTelefone{
+    background-color: #feebebea !important;
+    border: solid #ADB895 1rem;
+    border-radius: 1rem !important;
+
+}
+
+.headerModal{
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-around !important;
+    align-items: center !important;
+    
+}
+
+.nomePagina > p{
+    color: #ADB895;
+    font-weight: bold;
+    font-size: 2.3rem !important;
+    text-align: center !important;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50%;
+    padding: 3rem;
+    align-items: center;
+       
+}
+
+.dfechar{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 2rem;
+}
+
+.botaoFechar{
+    width: 3rem !important;
+    height: 3rem !important;
+    
+}
+
+.nomeEmail, .nomeTelefone{
+    display: flex !important;
+    align-items: center !important;
+    gap: 1.5rem;
+    height: 5rem !important;
+    margin: 1rem !important;
+}
+
+.lbl_nome{
+
+    width: 18rem !important;
+    background-color: #ADB895 !important;
+    color: #feebeb !important;
+    height: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-radius: 1.5rem !important;
+    border: solid 0.2rem #D17587;
+
+}
+
+.campos{
+    background-color: #D17587 !important;
+    border-radius: 1rem !important;
+    width: 45rem !important;
+    height: 100% !important;
+    margin: 0rem !important;
+    padding-left: 1rem !important;
+    
+}
+
+.btn_salvar{
+    margin-top: 2rem;
+    border-radius: 1.5rem;
+    font-size: 2rem;
+    width: 15rem;
+    height: 4rem;
+    background-color: #ADB895;
+    color: #FEEBEB;
+    font-weight: bold;
+    margin-right: 5rem !important;
+    
+}
+
+.btn_salvar:hover{
+    scale: 1.05;
+    filter: grayscale(40%);
+}
+
+.footerDialog{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: flex-end !important;
+    margin-top: auto !important;
+    
+}
+
+/*DIALOG DO ENDERECO*/
+
+.dialogEndereco{
+    grid-template-rows: auto;
+    width: 70rem;
+    translate: 85% 40% !important;
+    background-color: #feebebea;
+    border: #adb895 solid 1rem;
+    border-radius: 1rem !important;
+}
+
+/*FORMULÁRIO NOVO ENDEREÇO*/
+
+
+.form_endereco {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Duas colunas de mesmo tamanho */
+    gap: 2rem; /* Espaçamento entre os campos */
+    padding: 1rem !important;
+    align-items: baseline;
+    justify-content: center;
+    gap: 4rem !important;
+    
+}
+
+.footerEndereco{
+    grid-column: span 2; /* O footer ocupa ambas as colunas */
+    display: flex;
+    justify-content: center; /* Centraliza o botão horizontalmente */
+    margin-top: 2rem;
+}
+
+
+
+.dialogAll{
+    display: flex;
+    height: 75%;
+    padding: 2rem !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.legend_endereco{
+    background-color: #adb895;
+    font-size: 3rem;
+    border: solid black 0.3rem;
+    border-radius: 1rem;
+    
+}
+
+
+
+
+
+/*CONFIGURAÇÕES DOS CAMPOS DE ENDEREÇO*/
+.cep, .rua, .num, .bairro, .cidade, .complemento, .uf{
+    display: flex !important;
+    flex-direction: column !important;
+    
+}
+
+
+
+.campo_cep, .campo_rua, .campo_n, .campo_cidade, .campo_bairro, .campo_complemento, .campo_uf{
+    background-color: #FACECE !important;
+    height: 3rem !important;
+    border-radius: 0.5rem !important;
+    
+}
+
+
+
+.campo_rua, .campo_cidade, .campo_bairro, .campo_uf {
+    filter: brightness(80%) !important;
+}
+
+
+.campo_n, .campo_uf{
+    width: 10rem !important;
+    padding: 1.3rem !important;
+}
+
+.campo_rua, .campo_cidade, .campo_bairro, .campo_complemento, .campo_cep{
+    width: 26rem !important;
+    padding: 1.3rem !important;
+}
+
+
+
+
+/* configuração para telas maiores ( foram realizados apenas pequenos ajustes ) */
+
+    /* H  E  A  D  E  R */
+    header {
+        display: flex !important;
+        flex-direction: line !important;
+        background-color: #adb895 !important;
+    }
+
+    /* Utilizado para que as duas divs do header dividam a tela */
+    header>div {
+        flex-grow: 1 !important;
+    }
+
+    /* Configuração da div que contém logo/nome do sistema */
+    .divlogo {
+        display: flex !important;
+        justify-content: flex-start !important;
+        align-items: start !important;
+    }
+
+    /* Configuração logo sistema */
+    .logo {
+        margin: 1rem !important;
+        padding: 1rem !important;
+        max-width: 8rem !important;
+        max-height: 8rem !important;
+        background-color: #FEEBEB !important;
+        border-radius: 50% !important;
+    }
+
+
+    /* Configurações do nome do sistema no header */
+    header>div>p {
+        margin-top: 2rem !important;
+        font-size: 2.5rem !important;
+        font-weight: bold !important;
+        color: #feebeb !important;
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+
+    /* Configuração da saudação ao usuário no header */
+    .saudacao_usuario {
+        display: flex !important;
+        justify-content: flex-end !important;
+        align-items: start !important;
+    }
+
+    /* Ícone que identifica que o usuário logado */
+    .icone_perfil {
+        margin-right: 1rem !important;
+        padding: 1rem !important;
+        margin-top: 1rem !important;
+        max-width: 8rem !important;
+        max-height: 8rem !important;
+        background-color: #FEEBEB !important;
+        border-radius: 50% !important;
+        border: 0.2rem solid #D17587 !important;
+        ;
+    }
+
+    /* Configuração texto "Olá, Usuário" */
+    .saudacao_usuario>p {
+        margin-right: 8rem !important;
+        margin-top: 3.5rem !important;
+        font-size: 2.5rem !important;
+        font-weight: bold !important;
+        color: #feebeb !important;
+    }
+
+    /* F  I  M    H  E  A  D  E  R */
+
+
+    /* configuração do identificador da pagina, com icone e nome */
+    .identificador_pagina {
+        margin-top: 2rem !important;
+        margin-left: 2rem !important;
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: flex-start !important;
+    }
+
+    .identificador_pagina>img {
+        width: 6rem !important;
+    }
+
+    .identificador_pagina>h1 {
+        color: #ADB895 !important;
+        font-size: 3.5rem !important;
+        margin-top: 1rem !important;
+        margin-left: 1rem !important;
+    }
+
+    /* configurações do article que contém todos os campos de dados*/
+    article {
+        height: 100vh !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        flex-direction: column !important; 
+        
+    }
+
+    /* Div dos campos de dados */
+    .dados {
+        width: 60% !important;
+        margin-left: 20rem !important ;
+    }
+
+    
+
+
+    .campo_telefone {
+        margin-left: 8rem !important;
+    }
+
+    .campo_email,
+    .campo_nome {
+        width: 80% !important;
+    }
+
+    .campo_telefone,
+    .campo_senha,
+    .campo_cpf {
+        width: 36.5% !important;
+        
+    }
+
+    .campo_nome>input,
+    .campo_email>input,
+    .campo_telefone>input,
+    .campo_cpf>input,
+    .campo_senha>input {
+        height: 4rem !important;
+        padding: 1rem !important;
+
+    }
+
+    .linha_email,
+    .linha_telefone,
+    .linha_senha {
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+    }
+
+
+    /* configurações botao de editar dados */
+    .icone_editar>img {
+        max-width: 3rem !important;
+        margin-left: 1rem !important;
+        padding: 0.4rem !important;
+        background-color: #FACECE !important;
+        border-radius: 20% !important;
+
+    }
+
+    .icone_editar>img:hover {
+        scale: 1.08 !important;
+        filter: grayscale(40%) !important;
+    }
+
+    /* configurações de footer com botao de voltar */
+    footer {
+        display: flex !important;
+        margin-top: auto !important;
+    }
+
+
+    footer>div {
+        flex-grow: 1 !important;
+    }
+
+    /*Configuração da div "voltar"*/
+    .voltar {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-end !important;
+        justify-content: center !important;
+    }
+
+    /*Configuração do icone de voltar*/
+    .icone_voltar {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-end !important;
+        margin-right: 2rem !important;
+        margin-bottom: 1rem !important;
+    }
+
+
+    .icone_voltar:hover {
+        background-color: #adb8957a !important;
+        border-radius: 100% !important;
+        scale: 1.05 !important;
+    }
+
+    /*Configuração da imagem da div "voltar"*/
+    .icone_voltar>img {
+        max-width: 12rem !important;
+    }
+
+.enderecos{
+    gap: 1rem;
+    width: 50% !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.headerEndereco{
+    
+    padding: 0rem !important;
+    text-align: center;
+    background-color: #adb895 !important;
+}
+
+.headerEndereco>h3{
+    font-size: 3rem;
+    font-weight: bold;
+    color: #Feebeb;
+}
+
+.endereco{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem !important;
+    margin-bottom: 0.5rem  !important;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #D17587;
+    background-color: #adb89569;
+    
+}
+
+.endereco:hover{
+    filter: grayscale(50%);
+
+}
+
+
+.bodyEndereco{
+    border: solid #ADB895 0.5rem;
+    height: 20rem;
+    width: 80rem !important;
+    overflow: auto !important;
+    flex-direction: column !important;
+    
+}
+
+.containerEndereco>div{
+    padding: 0.5rem !important;
+}
+
+.btn_endereco{
+    background-color: #ADB895 !important;
+    height: 3rem;
+    width: 4rem;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn_endereco:hover{
+    background-color: #adb8957a !important;
+    scale: 1.05 !important;
+
+}
+
+.btn_fechar{
+    display: flex !important;
+    justify-content: flex-end !important;
+    padding-right: 3rem !important;
+}
+
+.icone_excluir{
+    width: 2rem !important;
+    height: 2rem !important;
+}
+
+.botao_excluir{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.icone_excluir:hover{
+    scale: 1.10 !important;
+    filter: grayscale(0%) !important;
+}

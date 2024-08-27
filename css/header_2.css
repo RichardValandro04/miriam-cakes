@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/*aplicado o tamanho das flores*/
+.tulipas{
+    max-width: 20rem !important;
+    max-height: 20rem !important;
+}
+
+/*  H  E  A  D  E  R  */
+
+header {
+    display: flex !important;
+    flex-direction: line !important;
+}
+
+/* garantindo que as divs ocupem todo o espaço do header */
+header>div {
+    flex-grow: 1 !important;
+}
+
+/* flor superior direita, alinhada utilizando flexbox */
+.divflor {
+    display: flex !important;
+    justify-content: flex-end !important;
+}
+
+/* configuração de tamanho e posicionamento da logo do sistema */
+.divlogo {
+    display: flex !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+}
+
+.divlogo>h2 {
+    font-family: "Inter", sans-serif !important;
+    font-weight: bold !important;
+    color: #Adb895 !important;
+    font-size: 2.5rem !important;
+    margin-left: 1.4rem !important;
+}
+
+.logo {
+    max-width: 10rem !important;
+    max-height: 10rem !important;
+    margin-left: 2rem !important;
+
+}
+
+/*  H  E  A  D  E  R  */

@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/*HTML-BODY-HEADER*/
+html {
+    font-size: 62.5% !important;
+    font-family: "inter", sans-serif !important;
+}
+
+* {
+    outline: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+}
+
+body {
+    height: 100vh !important;
+    display: flex !important;
+    flex-direction: column !important;
+    background-color: #feebeb !important;
+}
+
+header {
+    display: flex !important;
+    flex-direction: line !important;
+    background-color: #adb895 !important;
+}
+
+/* Utilizado para que as duas divs do header dividam a tela */
+header>div {
+    flex-grow: 1 !important;
+}
+
+/* Configuração da div que contém logo/nome do sistema */
+.divlogo {
+    display: flex !important;
+    justify-content: flex-start !important;
+    align-items: start !important;
+}
+
+/* Configuração logo sistema */
+.logo {
+    margin: 1rem !important;
+    padding: 1rem !important;
+    max-width: 8rem !important;
+    max-height: 8rem !important;
+    background-color: #FEEBEB !important;
+    border-radius: 50% !important;
+}
+
+
+/* Configurações do nome do sistema no header */
+header>div>p {
+    margin-top: 2rem !important;
+    font-size: 2.5rem !important;
+    font-weight: bold !important;
+    color: #feebeb !important;
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+
+/* Configuração da saudação ao usuário no header */
+.saudacao_usuario {
+    display: flex !important;
+    justify-content: flex-end !important;
+    align-items: start !important;
+}
+
+/* Ícone que identifica que o usuário logado */
+.icone_perfil {
+    margin-right: 1rem !important;
+    padding: 1rem !important;
+    margin-top: 1rem !important;
+    max-width: 8rem !important;
+    max-height: 8rem !important;
+    background-color: #FEEBEB !important;
+    border-radius: 50% !important;
+    border: 0.2rem solid #D17587 !important;
+}
+
+/* Configuração texto "Olá, Usuário" */
+.saudacao_usuario>p {
+    margin-right: 8rem !important;
+    margin-top: 3.5rem !important;
+    font-size: 2.5rem !important;
+    font-weight: bold !important;
+    color: #feebeb !important;
+}
+
+
+article {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.entrega{
+    margin-right: 2rem !important;
+}
+
+.retirada{
+    margin-left: 3rem !important;
+}
+
+/*SELECIONE ENDEREÇO ENTREGA*/
+p {
+    color: #D17587 !important;
+    font-size: 1.3rem !important;
+    font-weight: bold !important;
+}
+
+/*CONFIGURAÇÕES FORMULÁRIO*/
+fieldset {
+    border: 0.5rem solid #ADB895 !important;
+    border-radius: 0.7rem !important;
+}
+
+legend {
+    background-color: #ADB895 !important;
+    border-top-left-radius: 0.5rem !important;
+    border-top-right-radius: 0.5rem !important;
+    color: #feebeb !important;
+    font-size: 1.5rem !important;
+    font-weight: bold !important;
+    padding: 0.3rem 1rem !important;
+}
+
+input {
+    border: none !important;
+}
+
+input[type=date] {
+    background-color: #ADB895 !important;
+    border-radius: 0.5rem !important;
+    font-size: 2rem !important;
+    font-weight: bold !important;
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
+    color: #feebeb !important;
+    padding: 0.5rem 1rem !important;
+}
+
+input[type=time] {
+    background-color: #ADB895 !important;
+    border-radius: 0.5rem !important;
+    color: #feebeb !important;
+    font-size: 2rem !important;
+    font-weight: bold !important;
+    margin-left: 1rem !important;
+    padding: 0.5rem 1rem !important;
+    width: 20.5rem !important;
+}
+
+label {
+    color: #ADB895 !important;
+    font-size: 2.5rem !important;
+    font-weight: bold !important;
+
+}
+
+/*NOVO PEDIDO*/
+h1 {
+    font-size: 4rem !important;
+    color: #DE8686 !important;
+    margin-top: 0.5rem !important;
+}
+
+/*IR PARA PAGAMENTO*/
+h4 {
+    font-size: 1.5rem !important;
+    color: #feebeb !important;
+}
+
+
+
+#icone_pix {
+    width: 2rem !important;
+    height: 2.3rem !important;
+    margin-left: 1rem !important;
+}
+
+/*CONFIGURAÇÕES TABELA*/
+table {
+    table-layout: fixed;
+    background-color: rgba(173, 184, 149, 0.5) !important;
+    border-radius: 1rem !important;
+    border-spacing: 0rem 1rem !important;
+    width: 90rem !important;
+    padding: 0rem 1rem !important;
+    margin-top: 5rem !important;
+}
+
+th {
+    font-size: 2rem !important;
+    font-weight: 600 !important;
+    color: #feebeb !important;
+    background-color: #DE8686 !important;
+    border-radius: 1.3rem !important;
+    margin-left: 10rem !important;
+    padding: 0.5rem 0rem !important;
+    position: relative !important;
+    bottom: 3rem !important;
+}
+
+td {
+    background-color: #ADB895 !important;
+    font-size: 1.8rem !important;
+    font-weight: bold !important;
+    color: #D17587 !important;
+    padding: 1rem !important;
+    text-align: center !important;
+
+}
+
+.coluna_esquerda {
+    border-top-left-radius: 1rem !important;
+    border-bottom-left-radius: 1rem !important;
+}
+
+.coluna_direita {
+    border-top-right-radius: 1rem !important;
+    border-bottom-right-radius: 1rem !important;
+}
+
+.fundo_ultima_linha {
+    background-color: rgba(173, 184, 149, 0) !important;
+
+}
+
+#valor_total {
+    background-color: #D17587 !important;
+    border-radius: 1rem !important;
+    color: #feebeb !important;
+    padding: 1rem 0.5rem 1rem 0.5rem !important;
+}
+
+/*CONFIGURAÇÕES DE FORMULÁRIO*/
+.modo_data_hora_selecao {
+    width: 50vw !important;
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 7rem !important;
+    margin-top: 3rem !important;
+    justify-content: center;
+
+}
+
+/*FORMULÁRIO DATA E HORA*/
+.tam_calen_relo {
+    width: 3.65rem !important;
+    display: flex !important;
+    
+}
+
+.data_hora_entrega {
+    display: flex !important;
+    flex-direction: row !important;
+}
+
+#fundo_calen_relog {
+    background-color: #ADB895 !important;
+    border-radius: 0.5rem !important;
+    
+}
+
+.data_de_entrega {
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.icon_input_data_hora {
+    display: flex !important;
+    flex-direction: row !important;
+}
+
+/*FORMULÁRIO ENTREGA OU RETIRADA*/
+#label_entrega_retirada {
+    color: #D17587 !important;
+    font-size: 1.7rem !important;
+}
+
+.entrega_retirada {
+    display: flex !important;
+    flex-direction: row !important;
+}
+
+/*FORMULÁRIO DE SELEÇÃO DE ENDEREÇO*/
+select {
+    display: flex !important;
+    width: 100% !important;
+    background-color: #ADB895 !important;
+    border: none !important;
+    border-radius: 0.5rem !important;
+    color: #feebeb !important;
+    font-weight: bold !important;
+    padding: 0.3rem !important;
+    font-size: 1.8rem !important;
+
+}
+
+option {
+    color: #feebeb !important;
+    font-weight: bold !important;
+
+}
+
+.selecao_endereco {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 34rem !important;
+}
+
+
+
+input[type=radio]{
+    position: relative !important; 
+    opacity: 1 !important;
+    pointer-events: initial !important;
+}
+
+
+/* Define a classe para exibir a dropdown com display flex */
+.show-dropdown {
+    display: flex !important;
+}
+
+/* Define a classe para esconder a dropdown */
+.hide-dropdown {
+    display: none !important;
+}
+
+.selectEndereco{
+    margin-bottom: 3rem !important;
+    height: 5rem !important;
+    width: 23rem !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+}
+
+.ocultarFormEndereco{
+    display: none;
+}
+
+.exibirFormEndereco{
+    display: flex;
+}
+
+.botaoIr {
+    background-color: #D17587 !important;
+    border-radius: 0.5rem !important;
+    width: 20rem !important;
+    height: 5rem !important;
+    border: none !important;
+    text-align: center !important;
+    font-size: 2rem !important;
+    color: #feebeb;
+    font-weight: bold;
+    font-family: "inter", sans-serif !important;
+}
+
+.botaoIr:hover{
+    scale: 1.07 !important;
+    filter: brightness(80%) !important;
+}
+
+.buttonConfirma{
+    margin-top: 12rem !important;
+}
+
+tbody{
+    display: block !important;
+    max-height: 30rem !important; /* Altura máxima do contêiner */
+    overflow-y: auto !important; /* Adiciona scroll vertical */
+    border: 0.1rem solid #ccc !important; /* Borda opcional */
+    
+}
+
+thead {
+    display: table;
+    width: 100%;
+    table-layout: fixed; /* Garante que as colunas do thead alinhem com o tbody */
+
+}
+
+
+tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed; /* Garante que as colunas do tbody alinhem com o thead */
+    
+}
+
+.titulos>th{
+    text-align: center !important;
+
+}
+
+

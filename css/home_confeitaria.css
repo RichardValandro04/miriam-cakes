@@ -1,0 +1,292 @@
+/*configuração para todos os elementos*/
+*{
+    box-sizing: border-box ;
+    margin: none ;
+    padding: none ;
+}
+
+/*configuração para a pagina html*/
+html{
+    font-size: 62.5% !important;
+    font-family: "inter", sans-serif !important;
+}
+
+/*configuração para o corpo do html*/
+body{
+    height: 100vh !important;
+    width: 100vw !important;
+    margin: 0 !important;
+    background-color: #feebeb !important;
+    color: #fff !important;
+    overflow: hidden;
+}
+
+/*div que agrupa todos os elementos da página, exceto header*/
+.div_organ{
+    display: flex !important;
+    flex-direction: row !important;
+}
+
+/*configuração da siderbar*/
+.sidebar{
+    
+    display: inline-block !important;
+    max-width: 40vh !important;
+    max-height: 84vh !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    width: 35rem !important;
+    height: 90rem !important;
+    padding: 1rem 0.5rem 1rem 0.5rem !important;
+    border-right: 0.1rem solid black !important;
+    background-color: #adb895 !important;
+
+}
+
+
+/*configuração da logo da sidebar*/
+.logo{
+    max-width: 10rem !important;
+    max-height: 10rem !important;
+    background-color: #feebeb !important;
+    border-radius: 50% !important;
+    padding: 0.3rem !important;
+    
+}
+
+/*configuração dos botões da sidebar*/
+.botao, .botao_sair, .botao_cardapio, .botao_pedidos, .botao_clientes{
+    background: transparent !important;
+    border: 0 !important;
+    color: #fff !important;
+    text-align: left !important;
+    padding: 2rem 0.5rem 3rem 0.5rem !important;
+    margin: 3rem 1rem 2rem 1rem !important;
+    display: flex !important;
+    
+    
+}
+
+/*configuração para aparecer o hover ao passar o mouse por cima da div*/
+.botao:hover, .botao_sair:hover, .botao_cardapio:hover, .botao_pedidos:hover, .botao_clientes:hover{
+    background-color: #d1758775 !important;
+    border-radius: 3rem !important;
+    cursor: pointer !important;
+    scale: 1.04 !important;
+}
+
+
+/*configuração de cada "p" da sidebar*/
+.botao > p, .botao_sair > p, .botao_cardapio > p, .botao_pedidos > p, .botao_clientes > p{
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 1.2rem !important;
+    padding: 0 2rem 0 2rem !important;
+    font-size: 2.5rem !important;
+    line-height: 1rem !important;
+    justify-content: center !important;
+    
+
+}
+
+/*configuração do footer da sidebar*/
+.sidebar > footer{
+    margin-top: 10rem !important;
+}
+
+
+/*configuração de cada icone da sidebar*/
+.botao > i, .botao_sair > i , .botao_cardapio > i, .botao_pedidos > i, .botao_clientes > i{
+
+    font-size: 8rem !important;
+    color:#d17587 !important;
+    
+    
+    
+}
+
+
+
+/*configuração da nav da sidebar*/
+.sidebar nav{
+    flex: 1 1 auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    
+}
+
+
+/*configuração do header principal*/
+.logo_header{
+    display: inline-block !important;
+    max-width: 15rem !important;
+    max-height: 15rem !important;
+    margin-right: 1rem !important;
+    gap: 1.2rem !important;
+    
+    
+}
+
+/*div que fica dentro do header e a logo na parte superior esquerda*/
+.espaco{
+    background-color: #adb895 !important;
+    border: black 1rem !important;
+    width: 35rem !important;
+    height: 15rem !important;
+    border-right: 0.1rem solid black !important;
+    display: flex !important;
+    padding: 2rem !important;
+}
+
+/*configuração do h1 da div "espaco"*/
+.espaco > h1{
+    justify-content: center !important;
+    text-align: center !important;
+    margin-top: 2rem !important;
+    padding: 2rem !important;
+    font-size: 3rem !important;
+    font-family: "kalam", cursive !important;
+}
+
+
+/*configuração da logo do header principal*/
+.divlogo{
+
+    
+    justify-content: center !important;
+    align-items: center !important;
+    max-width: 100vw !important;
+    max-height: 10vh !important;
+    margin-left: 30rem !important;
+    display: flex !important;
+    margin-top: 5rem !important;
+
+
+}
+
+/*configuração do texto do header principal*/
+.divtexto>h1{
+    color: #adb895 !important;
+    font-size: 4rem !important;
+    margin-left: 2rem !important;
+}
+
+
+/*div que agrupa o "titulo" da pagina*/
+.divtexto{
+    display: inline-block !important;
+    justify-content: center !important;
+    align-items: center !important;
+    max-width: 100vw !important;
+    max-height: 10vh !important;
+}
+
+/*div que agrupa todo o header*/
+.div_header_all{
+    display: flex !important;
+}
+
+
+/*configuração da div "container" principal*/
+.container{
+    max-width: 100vh !important;
+    max-height:100vh  !important;
+    width: 100% !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    
+    
+
+}
+
+
+/*configuração do fieldset*/
+.caixa {
+
+    padding: 1rem !important;
+    background-color: #adb895 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    border: 1rem solid #adb895 !important;
+    border-radius: 1rem !important;
+    border-color: #d17587 !important;
+    height: 60rem !important;
+    width: 110rem !important;
+
+    margin-left: 15rem !important;
+    margin-top: 7rem !important;
+}
+
+.linha_tabela{
+    margin: 1rem;
+    width: 99% !important;
+    background-color: #676e54; 
+}
+
+
+/*configuração da legenda */
+.legenda{
+    background-color: #d17587 !important;
+    color: #feebeb !important;
+    font-weight: bold !important;
+    padding: 1.3rem !important;
+    font-size: 3rem !important;
+    margin-bottom: 0.5rem !important;
+    border-radius: 1rem !important;
+    
+}
+
+/*configuraçôes da tabela*/
+.tabela_cliente{
+    display: block;
+}
+
+th {
+    font-size: 3rem !important;
+    color: #d17587 !important;
+
+}
+
+td {
+    font-size: 2.5rem !important;
+    padding: 2rem !important;
+    text-align: center !important;   
+    
+}
+
+
+tbody{
+    display: block !important;
+    height: 100% !important;
+    width: 99% !important;
+    overflow-y: auto !important; 
+    overflow-x: hidden !important; 
+
+
+}
+
+thead {
+    display: table;
+    width: 100%;
+    table-layout: fixed; 
+
+}
+
+
+tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    border-radius: 2rem;
+
+}
+
+.titulos>th{
+    text-align: center !important;
+
+}
+
+/*fim das configuraçôes da tabela*/
+
+
+

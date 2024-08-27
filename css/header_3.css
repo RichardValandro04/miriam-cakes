@@ -1,0 +1,71 @@
+/* H  E  A  D  E  R */
+header {
+    display: flex !important;
+    flex-direction: line !important;
+    background-color: #adb895 !important;
+}
+
+/* Utilizado para que as duas divs do header dividam a tela */
+header>div {
+    flex-grow: 1 !important;
+}
+
+/* Configuração da div que contém logo/nome do sistema */
+.divlogo {
+    display: flex !important;
+    justify-content: flex-start !important;
+    align-items: start !important;
+}
+
+/* Configuração logo sistema */
+.logo {
+    margin: 1rem !important;
+    padding: 1rem  !important;
+    max-width: 8rem !important;
+    max-height: 8rem !important;
+    background-color: #FEEBEB !important;
+    border-radius: 50% !important;
+}
+
+
+/* Configurações do nome do sistema no header */
+header>div>p {
+    margin-top: 2rem !important;
+    font-size: 2.5rem !important;
+    font-weight: bold !important;
+    color: #feebeb !important;
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+
+/* Configuração da saudação ao usuário no header */
+.saudacao_usuario {
+    display: flex !important;
+    justify-content: flex-end !important;
+    align-items: start !important;
+}
+
+/* Ícone que identifica que o usuário logado */
+.icone_perfil {
+    margin-right: 1rem !important;
+    padding: 1rem !important;
+    margin-top: 1rem !important;
+    max-width: 8rem !important;
+    max-height: 8rem !important;
+    background-color: #FEEBEB !important;
+    border-radius: 50% !important;
+    border: 0.2rem solid #D17587 !important;
+    ;
+}
+
+/* Configuração texto "Olá, Usuário" */
+.saudacao_usuario>p {
+    margin-right: 8rem !important;
+    margin-top: 3.5rem !important;
+    font-size: 2.5rem !important;
+    font-weight: bold !important;
+    color: #feebeb !important;
+}
+
+/* F  I  M    H  E  A  D  E  R */

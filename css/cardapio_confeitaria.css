@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Just+Another+Hand&family=Kalam:wght@300 !important;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/* Setando font-size e cor de fundo da página */
+html {
+    font-size: 62.5% !important;
+    background-color: #FEEBEB !important;
+    font-family: "Inter", sans-serif !important;
+}
+
+/* Reset da página */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+/* CONFIGURAÇÕES BODY - ARTICLE*/
+/*Foi aplicado o tamanho do body em 100% do viewport e um background rosa, além do display flex */
+body {
+    height: 100vh !important;
+    display: flex !important;
+    flex-direction: column !important;
+    background-color: #feebeb !important;
+}
+
+
+article {
+    display: flex !important;
+    flex-direction: row !important;
+    width: 100%;
+    height: 100%;
+}
+
+section{
+    width: 50%;
+    height: 80%;
+}
+
+.tabelasRecheios{
+    width: 70%;
+    margin-top: 10rem;
+    display: flex;
+    justify-content: center;
+}
+
+.doce > div{
+    display: flex;
+}
+
+.divFoto{
+    justify-content: center;
+    width: 20%;
+}
+
+.divNome{
+    justify-content: flex-start;
+    width: 45%;
+}
+
+.divValor{
+    justify-content: flex-start;
+    width: 20%;
+}
+
+.divExcluir{
+    justify-content: center;
+    width: 10%;
+}
+
+.tabela{
+    width: 100%;
+}
+
+/* Configurações do identificador da página, que possui ícone de clientes e texto "Clientes" */
+.identificador_pagina {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    margin-top: 1rem !important;
+    margin-bottom: 10rem !important;
+}
+
+.identificador_pagina>img {
+    max-width: 8rem !important;
+    margin-left: 1rem !important;
+}
+
+.identificador_pagina>p {
+    font-family: "Inter", sans-serif !important;
+    color: #ADB895 !important;
+    font-weight: bold !important;
+    font-size: 3rem !important;
+    margin-top: 0.8rem !important;
+    margin-left: 2rem !important;
+
+}
+
+.recheio, .doce{
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ADB895;
+    padding: 2rem !important;
+}
+
+#doces, #recheios{
+    max-height: 52rem !important;
+    overflow-y: auto !important;
+    overflow-x: auto !important;
+    
+}
+
+.icone_excluir{
+    width: 3rem !important;
+    height: 3rem !important;
+}
+
+#foto{
+    width: 10rem !important;
+    height: 10rem !important;
+}
+
+.recheio:hover, .doce:hover{
+    filter: grayscale(0.6);
+}
+
+.icone_excluir:hover{
+    scale: 1.2;
+}
+
+
+/*CONFIGURAÇÕES ADICIONAR RECHEIO E DOCE*/
+/*TEXTO DE ADICIONAR RECHEIO E DOCE*/
+.adicionar {
+    color: #D17587 !important;
+    font-size: 1.5rem !important;
+    font-weight: 700 !important;
+    margin-top: 0.54rem !important;
+    margin-left: 0.5rem !important;
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.add_recheio_doce {
+    display: flex !important;
+    flex-direction: column !important;
+    margin-left: 5rem !important;
+    top: 1rem !important;
+}
+
+.adicionar_recheio {
+    display: flex !important;
+    flex-direction: row !important;
+    margin-bottom: 3rem !important;
+    margin-left: 4rem !important;
+}
+
+.adicionar_doce {
+    display: flex !important;
+    flex-direction: row !important;
+    margin-left: 4rem !important;
+}
+
+.adicionar_doce:hover{
+    scale: 1.05 !important;
+}
+.adicionar_recheio:hover{
+    scale: 1.05 !important;
+}
+
+#icon_add {
+    width: 5rem !important;
+}
+
+dialog{
+    width: 80rem;
+    height: 50rem;
+    translate: 70% 40%;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 5rem;
+    
+}
+
+.campo_nome, .campo_desc, .campo_valor, .campo_foto, .nome_recheio{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 5rem;
+    margin: 1rem;
+}
+
+.campo_nome>label, .nome_doce>label, .campo_desc>label, .campo_valor>label, .label_fotos, .lbl_nome{
+
+    width: 18rem !important;
+    background-color: #ADB895 !important;
+    height: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-radius: 1.5rem !important;
+
+}
+
+
+.footerDialog{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: flex-end !important;
+    margin-top: auto !important;
+}
+
+
+.campo_valor{
+    align-items: center;
+}
+
+
+
+.btn_salvar{
+    margin-top: 2rem;
+    border-radius: 1.5rem;
+    font-size: 2rem;
+    width: 15rem;
+    height: 4rem;
+    background-color: #ADB895;
+    color: #FEEBEB;
+    font-weight: bold;
+    
+}
+
+.btn_salvar:hover{
+    scale: 1.05;
+    filter: grayscale(40%);
+}
+
+.salvar{
+    display: flex;
+    justify-content: center;
+}
+
+
+.headerModal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 2rem;
+}
+.botaoFechar{
+    width: 3rem !important;
+    height: 3rem !important;
+    
+}
+
+.btn_fechar{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 2rem;
+}
+
+.nomePagina > p{
+    color: #ADB895;
+    font-weight: bold;
+    font-size: 2.3rem !important;
+    text-align: center !important;
+}
+
+.headerModal > div{
+    flex-grow: 1 !important;
+}
+
+.dialogNovoRecheio, .dialogNovoDoce{
+     background-color: #feebebea !important;
+     border: solid #ADB895 1rem;
+     border-radius: 2rem;
+}
+
+.campos{
+    background-color: #D17587 !important;
+    border-radius: 1rem !important;
+    width: 45rem !important;
+    height: 100% !important;
+    margin: 0rem !important;
+    padding-left: 1rem !important;
+    
+}
+
+input{
+    box-shadow: 0 0 0 0 !important;
+    border: 0 none !important;
+    outline: 0 !important;
+}
+
+textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0 !important;
+    border: 0 none !important;
+    outline: 0 !important;
+} 
+
+#foto_doce{
+    width: 46rem !important;
+}
+
+input[type=file]{
+    display: flex;
+    
+}
+
+
+
+label{
+    font-size: 2rem;
+    color: #feebeb;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+

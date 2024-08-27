@@ -1,0 +1,534 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/*o font size na tag HTML é para padronizar a fonte em 10px, tornando mais fácil trabalhar com a medida rem*/
+html {
+    font-size: 62.5% !important;
+    font-family: "Inter", sans-serif !important;
+}
+
+/*foi aplicado o tamanho do body em 100% do viewport e um background rosa, além do display flex */
+body {
+    height: 100vh !important;
+    display: flex !important;
+    flex-direction: column !important;
+    background-color: #feebeb !important;
+}
+
+/*RESET - Utilizado para aplicar os estilos em todo o conteúdo da página*/
+* {
+    outline: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* H  E  A  D  E  R */
+header{
+    display: flex !important;
+    flex-direction: row !important;
+    background-color: #adb895 !important;
+    justify-content: center !important;
+    padding-bottom: 1rem !important;
+   
+}
+
+/* Utilizado para que as duas divs do header dividam a tela */
+header>div {
+    margin-top: 1rem !important;
+    flex-grow: 1 !important;
+}
+
+/* Configuração da saudação ao usuário no header */
+.saudacao_usuario {
+    display: flex !important;
+    align-items: center !important;
+    margin-left: 5rem !important;
+    
+}
+
+/* Ícone que identifica que o usuário logado */
+.icone_perfil {
+    margin-right: 1rem !important;
+    padding: 1rem !important;
+    max-width: 9rem !important;
+    max-height: 9rem !important;
+    background-color: #FEEBEB !important;
+    border-radius: 50% !important;
+    border: 0.2rem solid #D17587 !important;
+    
+}
+
+/* Configuração texto "Olá, Usuário" */
+.saudacao_usuario>p {
+    font-size: 4rem !important;
+    font-weight: bold !important;
+    color: #D17587 !important;
+}
+
+
+/* Configuração texto "CARDÁPIO" */
+.informacao_tela{
+    text-align: center !important;
+    justify-content: center !important;
+    align-items: center !important;
+    display: flex !important;
+    color: #D17587 !important;
+    margin-left: 12rem !important;
+   
+}
+
+.informacao_tela>h1{
+    font-size: 5rem !important;
+}
+
+/*configuração da div que agrupa o icone e texto do carrinho, um pop-up/modal*/
+.div_carrinho{
+    display: flex !important;
+    align-items: center !important;
+    flex-direction: column !important;
+    width: 0rem !important;    
+    font-size: 2.5rem !important;
+    font-weight: bold !important;
+    color: #D17587 !important;
+    margin-left: 10rem !important;
+    cursor: pointer !important;
+}
+
+.div_carrinho:hover{
+    scale: 1.05 !important;
+    filter: brightness(95%) !important;
+}
+
+.fechar:hover{
+    scale: 1.05 !important;
+    filter: brightness(95%) !important;
+}
+
+
+/* configurando icone de carrinho do header */
+.icone_carrinho{
+    
+    max-width: 8rem !important;
+    max-height: 8rem !important;   
+    
+}
+
+.div_carrinho>p{
+    text-align: center !important;
+    justify-content: center !important;
+    align-items: center !important;
+    
+}
+
+#conteudo_carrinho{
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 1rem !important;
+    overflow-y: auto !important; /* scroll se necessário */
+}
+
+.item_carrinho{
+    display: flex !important;
+    margin: 1rem !important;
+    flex-direction: column !important;
+    border: 0.2rem solid #000000 !important;
+    padding: 1rem !important;
+    width: 20rem !important;
+    background-color: #feebeb !important; 
+    
+}
+
+.item_carrinho:nth-child(even) {
+    background-color: #d17587 !important; 
+}
+
+.nome_preco {
+    flex: 1 !important;
+}
+
+.nome_preco p {
+    font-size: 1.5rem !important;
+}
+
+.quantidade_recheios {
+    flex: 1 !important;
+}
+
+.quantidade_recheios p {
+    font-size: 1.5rem !important;
+}
+
+
+
+/*configuração do botão de voltar*/
+.voltar{
+    display: flex !important;
+    justify-content: center !important;
+    text-align: center !important;
+
+}
+
+.icone_voltar{
+    width: 13rem !important;
+}
+
+.icone_voltar:hover {
+    background-color: #d175879d !important;
+    border-radius: 100% !important;
+    scale: 1.05 !important;
+}
+
+/*Configuração da imagem da div "voltar"*/
+.icone_voltar>img {
+    max-width: 12rem !important;
+}
+
+
+/* configuração do modal carrinho */
+.dialog_carrinho{
+    margin-left: auto !important;
+    text-align: center !important;
+    flex-wrap: wrap !important;
+    height: 100% !important;
+    width: 55rem !important;
+    background-color: #adb895ea !important;
+    border: none !important;
+    border-bottom: solid .5rem !important;
+    border-left: solid .5rem !important;
+    
+}
+
+.dialog_carrinho>div{
+    display: flex !important;
+    padding: 2rem !important;
+}
+
+.dialog_carrinho>p{
+    font-size: 2rem !important;
+    margin-top: 10rem !important;
+}
+
+.fechar>img{
+    max-width: 8rem !important;
+    max-height: 8rem !important; 
+}
+
+.carrinho_info{
+    display: flex !important;
+    justify-content: center !important;
+}
+
+.carrinho_info>p{
+    padding: 1rem !important;
+    font-size: 3rem !important;
+    background-color: #D17587 !important;
+    border-radius: 2rem !important;
+    color: #FEEBEB !important;
+    
+}
+
+.pedidos_carrinhos{
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+
+/*B O D Y*/
+
+/*configuração da section*/
+section{
+    height: 68% !important;
+    background-color: #FEEBEB !important;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-around !important;
+    align-items: flex-start !important;
+    margin-top: 4rem !important;
+    
+    
+}
+
+.popup_adicionar{
+    
+    width: 30rem !important;
+    height: 10rem !important;
+    margin-left: 3rem !important;
+    background-color: #adb895d3 !important;
+    margin-top: -3rem !important;
+    box-shadow: 1rem 1rem 0.4rem #000000 !important;
+    
+    
+}
+
+.popup_adicionar>p{
+    margin-top: 3rem !important;
+    font-size: 2rem !important;
+    color: #000000 !important;
+}
+
+/*configuração do article*/
+article{
+    height: 90% !important;
+
+}
+
+/*configuração da table*/
+table{
+    height: 100% !important;
+
+}
+
+
+/*configuração do article "doces"*/
+.article_doces{
+    width: 40% !important;
+    
+}
+
+/*configuração da legend do article "doces"*/
+.titulo_table{
+    background-color: #D17587 !important;
+    font-size: 2rem !important;
+    padding: 1rem !important;
+    width: 14rem !important;
+    border-top-left-radius: 2rem !important;
+    border-top-right-radius: 2rem !important;
+    font-weight: bold !important;
+    color: #FEEBEB !important;
+}
+.tbldoce{
+    height: 90%;
+    overflow-y: auto !important;
+}
+
+.doce{
+    text-align: center !important;
+}
+
+
+/*configuração da tabela do article "doces"*/
+.table_doces{
+    width: 100% !important;
+    background-color: #adb895 !important;
+    border:solid #D17587 0.5rem !important;
+    font-size: 2rem !important;
+    border-spacing: 1rem !important;
+    
+}
+
+/*configuração das imagens do article "doces"*/
+.imagens_doces{
+    width: 8rem !important;
+    height: 8rem !important;
+    border: solid 0.3rem #FEEBEB !important;
+    border-radius: 1rem !important;
+}
+
+/*configuração do td que inclui as informações dos doces (nome do doce e ingredientes)*/
+.td_info_doces{
+    width: 60% !important;
+    
+}
+
+/*configuração do td que inclui as informações dos valores*/
+.td_info_valores{
+    width: 20% !important;
+    font-size: 1.5rem !important;
+}
+
+
+/*configuração das tags "p" que incluem as informações dos doces (nome do doce e ingredientes)*/
+.nome_doce, .valor_doce, .quantidade_fatias, .valor_bolo{
+    background-color: #FEEBEB !important;
+    padding: 0.8rem !important;
+    border-radius: 1rem !important;
+    text-align: center !important;
+    border: #D17587 solid 0.3rem !important;
+    color: #D17587 !important;
+    font-weight: bold !important;
+    font-size: 2rem !important;
+}
+
+/*configuração das tags "p" que incluem as informações dos valores*/
+.ingredientes_doce, .quantidade_doce, .barra{
+    margin-top: -1rem !important;
+    border-bottom-left-radius: 1rem !important;
+    border-bottom-right-radius: 1rem !important;
+    text-align: center !important;
+    background-color: #D17587 !important;
+    font-size: 1.5rem !important;
+    padding: 0.5rem !important;
+    color: #FEEBEB !important;
+    font-weight: bold !important;
+}
+
+/*configuração do icone de carrinho, dentro do article "doces"*/
+.carrinho_buy{
+    width: 6rem !important;
+    height: 6rem !important;
+}
+
+.carrinho_buy:hover{
+    scale: 1.07 !important;
+    filter: brightness(95%) !important;
+
+}
+
+
+/*configuração do article "recheios"*/
+.article_recheios{
+    display: flex;
+    width: 50% !important;
+    height: 90% !important;
+}
+
+/*configuração da table do article "recheios"*/
+.table_recheios, .table_bolos{ 
+    background-color: #adb895 !important;
+    width: 100% !important;
+    height: 100% !important;
+    font-size: 2.5rem !important;
+    border-spacing: 1rem !important;
+    border: #D17587 solid 0.5rem !important;
+    color: #D17587 !important;
+    font-weight: bold !important;
+}
+.table_bolos, .tblBolos{
+    width: 100% !important; 
+}
+
+
+/*configuração do article "bolos"*/
+.article_bolos{
+    width: 50% !important;
+    height: 100% !important;
+}
+
+/*configuração do footer*/
+footer{
+    display: flex !important;
+    text-align: center !important;
+    justify-content: center !important;
+    align-items:flex-start !important;
+    margin-top: auto !important;
+
+    
+}
+
+/*configuração do botão "realizar pedidos"*/
+.botao_pedido{
+    height: 5rem !important;
+    margin-bottom: 5rem !important;
+    background-color: #adb895 !important;
+    padding: 1rem !important;
+    border-radius: 1rem !important;
+}
+
+.botao_pedido:hover{
+    filter: brightness(80%) !important;
+    scale: 1.05 !important;
+}
+
+td, th{
+    padding: 0.5rem;
+}
+
+.tblRecheios, .tblBolos{
+    display: flex !important;
+    height: 90% !important;
+    background-color: #adb895;
+    overflow-y: auto !important;
+    
+}
+
+
+.recheio, .bolo{
+    width: 100% !important;
+    color: #d17587 !important;
+    text-align: center !important;
+    border: none !important;
+    border-spacing: 1rem !important;
+    justify-content: center;
+    justify-items: center;
+}
+
+.checkbox_config{
+    width: 3rem;
+    height: 3rem;
+}
+
+.testeCarrinho{
+    height: 60% !important;
+}
+
+.footerCarrinho{
+    display: flex !important;
+    justify-content: flex-end !important;
+    align-items: center !important;
+    gap: 3rem !important;
+    padding: 2rem !important;
+}
+
+.footerCarrinho > p {
+    padding: 0.5rem !important;
+    text-align: center !important;
+    height: 4rem !important;
+    width: 16rem !important;
+    background-color: #D17587;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.footerCarrinho > h4 {
+    font-size: 3rem !important;
+    font-weight: bold !important;
+}
+
+/* Redefine todos os estilos aplicados pelo Materialize com !important */
+input[type="checkbox"] {
+    -webkit-appearance: checkbox !important; /* Aplica a aparência padrão do navegador */
+    -moz-appearance: checkbox !important;    /* Aplica a aparência padrão do navegador */
+    appearance: checkbox !important;         /* Aplica a aparência padrão do navegador */
+    position: static !important;             /* Remove o posicionamento absoluto */
+    opacity: 1 !important;                   /* Torna o checkbox visível */
+    pointer-events: auto !important;         /* Permite interações com o checkbox */
+    box-sizing: content-box !important;      /* Define o box-sizing padrão */
+    margin: 0 !important;                    /* Remove margens adicionais */
+    padding: 0 !important;                   /* Remove preenchimentos adicionais */
+    border: 1px solid #000 !important;       /* Define uma borda padrão */
+    background-color: #fff !important;       /* Define a cor de fundo padrão */
+    cursor: pointer !important;              /* Adiciona o cursor de ponteiro */
+}
+
+/* Remove estilizações personalizadas dos elementos ::before e ::after */
+input[type="checkbox"]::before,
+input[type="checkbox"]::after {
+    content: none !important;                /* Remove qualquer conteúdo gerado */
+}
+
+/* Redefine os estilos quando o checkbox está marcado */
+input[type="checkbox"]:checked {
+    background-color: #000 !important;       /* Cor de fundo quando marcado */
+    border-color: #000 !important;           /* Cor da borda quando marcado */
+}
+
+.removerCarrinho, .diminuirQuantidade{
+    margin-top: 0.3rem !important;
+}
+
+
+.diminuirQuantidade, .removerCarrinho, .aumentarQuantidade{
+    height: 3rem !important;
+    background-color: #adb895;
+    font-size: 2rem !important;
+    color: #793744;
+    font-weight: bold;
+}
+
+.diminuirQuantidade:hover, .removerCarrinho:hover, .aumentarQuantidade:hover{
+    scale: 1.001;
+    background-color: #FEEBEB;
+    border: 1px solid #d17587;
+}

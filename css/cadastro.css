@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/* Setando o Font-Size na proporção 1rem = 10px */
+html {
+    font-size: 62.5% !important;
+}
+
+/*RESET - Utilizado para aplicar os estilos em todo o conteúdo da página*/
+* {
+    outline: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+}
+
+/*foi aplicado o tamanho do body em 100% do viewport e um background rosa, além do display flex*/
+body {
+    height: 100vh !important;
+    display: flex !important;
+    flex-direction: column !important;
+    background-color: #feebeb !important;
+}
+
+/* C  O  N  T  E  U  D  O    P  R  I  N  C  I  P  A  L */
+
+/* Article inclui uma unica section com um formulário de dados */
+article {
+    width: 100vw !important;
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+/* Div's que separam o conteúdo do formulário em 2 partes, dados pessoais e de endereço */
+.dados_pessoais,
+.endereco {
+    width: 35% !important;
+    padding: 1rem !important;
+    border: 0.3rem solid #Adb895 !important;
+    border-radius: 2rem !important;
+}
+
+/* Configurações de estilo para a legenda de cada parte do formulário */
+legend {
+    display: flex !important;
+    justify-content: center !important;
+    font-family: "Inter", sans-serif !important;
+    background-color: #Adb895 !important;
+    color: #FEEBEB !important;
+    font-size: 1.4rem !important;
+    font-weight: bold !important;
+    padding: 1rem !important;
+    border-radius: 1rem !important;
+}
+
+.form {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    gap: 5rem !important;
+}
+
+/* form que agrupa todos os dados contido nas div's dados_pessoais e endereco */
+.formulario_dados {
+    display: flex !important;
+    justify-content: center !important;
+    flex-direction: column !important;
+}
+
+/* estilo do label dos campos de dados */
+label {
+    color: #Adb895 !important;
+    font-family: "Inter", sans-serif !important;
+    font-size: 1.5rem !important;
+    font-weight: bold !important;
+    margin-top: 0.4rem !important;
+}
+
+/* estilo dos campos de dados */
+input {
+    height: 3rem !important;
+    padding: 1rem !important;
+    border-radius: 0.7rem !important;
+    background-color: #FACECE !important;
+    border: none !important;
+}
+
+/* todas as divs contidas em dados pessoais serao com flex-direction column */
+.dados_pessoais > div {
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+/* as linhas agrupam 2 ou mais campos, e é aplicado a elas um flex direction row para colocar os campos lado a lado e tambem um space-between para espaça-las */
+.linha_cidade_uf,
+.linha_rua_num,
+.dados_pessoais > .linha_senha {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+}
+
+/* as div's de campos agrupam o label e o input, o flex-direction column deixa o label sobre o input*/
+.campo_cep,
+.campo_rua,
+.campo_num,
+.campo_bairro,
+.campo_complemento,
+.campo_cidade,
+.campo_uf,
+.campo_senha,
+.campo_conf_senha {
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+/* os campos abaixo serão preenchidos via API, por esse motivo foi aplicado um filtro para mostrar que estão bloqueados */
+.campo_rua > input,
+.campo_bairro > input,
+.campo_cidade > input,
+.campo_uf > input {
+    filter: brightness(80%) !important;
+}
+
+/* os campos senha e confirma senha estão lado a lado, foi aplicado uma largura de 47.5% em cada a fim de obter um gap de 5% entre os dois campos */
+.campo_senha,
+.campo_conf_senha {
+    width: 47.5% !important;
+}
+
+/* campo rua e cidade estão na mesma linha que os campos uf e num, por serem maiores, foi aplicada uma largura de 80% */
+/* obs.: estão com space-between, por esse motivo o gap sempre será entre os campos */
+.campo_rua,
+.campo_cidade {
+    width: 80% !important;
+}
+
+/* campo uf e num são menores, então foi aplicada uma largura de 15% em ambos e novamente ficando um gap de 5% entre campos */
+/* obs.: estão com space-between, por esse motivo o gap sempre será entre os campos */
+.campo_uf,
+.campo_num {
+    width: 15% !important;
+}
+
+/* div que agrupa o botão de registre-se */
+.botao {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: flex-start !important;
+}
+
+/* configuração do botão de registre-se */
+.botao_registro {
+    font-weight: bold !important;
+    font-family: "Inter", sans-serif !important;
+    border: none !important;
+    background-color: #Adb895 !important;
+    color: white !important;
+    font-size: 2rem !important;
+    margin-top: 3rem !important;
+    padding: 1.3rem !important;
+    width: 15% !important;
+    border-radius: 1.3rem !important;
+}
+
+.botao_registro:hover {
+    scale: 1.05 !important;
+    filter: brightness(90%) !important;
+}
+
+/* C  O  N  T  E  U  D  O    P  R  I  N  C  I  P  A  L */
+
+    /*aplicado o tamanho das flores*/
+    .tulipasbaixo {
+        max-width: 20rem !important;
+        max-height: 20rem !important;
+    }
+
+    .divlogo > p {
+        font-family: "Inter", sans-serif !important;
+        font-weight: bold !important;
+        color: #Adb895 !important;
+        font-size: 5rem !important;
+        margin-left: 3rem !important;
+    }
+
+    .logo {
+        max-width: 16rem !important;
+        max-height: 16rem !important;
+        margin-left: 3rem !important;
+    }
+
+    /*  H  E  A  D  E  R  */
+
+
+    /* C  O  N  T  E  U  D  O    P  R  I  N  C  I  P  A  L */
+
+    /* Div's que separam o conteúdo do formulário em 2 partes, dados pessoais e de endereço */
+    .dados_pessoais,
+    .endereco {
+        width: 35% !important;
+        padding: 2rem !important;
+        border: 0.5rem solid #Adb895 !important;
+        border-radius: 2rem !important;
+    }
+
+    /* Configurações de estilo para a legenda de cada parte do formulário */
+    legend {
+        display: flex !important;
+        justify-content: center !important;
+        font-family: "Inter", sans-serif !important;
+        background-color: #Adb895 !important;
+        color: #FEEBEB !important;
+        font-size: 3rem !important;
+        font-weight: bold !important;
+        padding: 2rem !important;
+        border-radius: 2rem !important;
+    }
+
+    /* estilo do label dos campos de dados */
+    label {
+        color: #Adb895 !important;
+        font-family: "Inter", sans-serif !important;
+        font-size: 2.5rem !important;
+        font-weight: bold !important;
+        margin-top: 1rem !important;
+    }
+
+    /* estilo dos campos de dados */
+    input {
+        height: 5rem !important;
+        padding: 1rem !important;
+        border-radius: 1rem !important;
+        background-color: #FACECE !important;
+        border: none !important;
+    }
+
+    /* configuração do botão de registre-se */
+    button {
+        font-family: "Inter", sans-serif !important;
+        border: none !important;
+        font-weight: bold !important;
+        background-color: #Adb895 !important;
+        color: white !important;
+        font-size: 3rem !important;
+        margin-top: 3rem !important;
+        padding: 2rem !important;
+        width: 20% !important;
+        border-radius: 2.5rem !important;
+    }
+
+    /*Configuração do icone de voltar*/
+    .icone_voltar {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-end !important;
+        margin-right: 4rem !important;
+        margin-bottom: 1rem !important;
+    }
+
+    /*Configuração da imagem da div "voltar"*/
+    .icone_voltar > img {
+        max-width: 12rem !important;
+    }

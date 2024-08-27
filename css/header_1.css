@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Just+Another+Hand&family=Kalam:wght@300 !important;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+/* Configurações do header com a logo e saudação ao usuário logado */
+.saudacao_logado {
+    background-color: #ADB895 !important;
+    display: flex !important;
+    flex-direction: row !important;
+    padding: 1rem !important;
+}
+
+/* Logo da empresa */
+#img_mirian {
+    padding: 0.7rem !important;
+    max-width: 7rem !important;
+    max-height: 7rem !important;
+    background-color: #FEEBEB !important;
+    border-radius: 50% !important;
+}
+
+/* Texto de saudação */
+#txt_ola_mirian {
+    font-family: "kalam", cursive !important;
+    font-style: normal !important;
+    font-size: 3rem !important;
+    letter-spacing: 0.3rem !important;
+    margin-left: 1rem !important;
+    color: #FEEBEB !important;
+    margin-top: 1.3rem !important;
+}

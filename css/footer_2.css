@@ -1,0 +1,42 @@
+/* CONGURAÇÕES FOOTER*/
+/* configurações de footer com botao de voltar */
+/*Configuração do footer*/
+footer {
+    display: flex !important;
+    margin-top: auto !important;
+}
+
+
+footer>div {
+    flex-grow: 1 !important;
+}
+
+/*Configuração da div "voltar"*/
+.voltar {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-end !important;
+    justify-content: center !important;
+}
+
+/*Configuração do icone de voltar*/
+.icone_voltar {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-end !important;
+    margin-right: 2rem !important;
+    margin-bottom: 1rem !important;
+}
+
+
+.icone_voltar:hover {
+    background-color: #adb8957a !important;
+
+    border-radius: 100% !important;
+    scale: 1.05 !important;
+}
+
+/*Configuração da imagem da div "voltar"*/
+.icone_voltar>img {
+    max-width: 10rem !important;
+}
